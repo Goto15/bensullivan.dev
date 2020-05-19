@@ -1,38 +1,501 @@
-.App {
-  text-align: center;
+html {
+  font-family: monospace;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 599px){
+  .aboutBlurb {
+    font-size: 18px;
+    padding-right: 3%;
+    padding-top: 25px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .canvas {
+    height: 100% !important;
+    padding-top: 55px;
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .contactList ul {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .contactList li {
+    float: left;
+    margin-left: 40px;
+    width: 40px; 
+  }
+
+  .linkList {
+    padding-top: 40px;
+  }
+
+  .linkList h1{
+    color: #162447;
+    font-size: 32px;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  .linkList a {
+    color: #e02947;
+    width: auto;
+  }
+
+  .linkList a:hover{
+    font-style: italic;
+  }
+
+  .linkList ul {
+    font-size: 32px;
+    padding-left: 3%;
+  }
+
+  .linkList li {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+
+  .miniSection {
+    padding: 40px;
+  }
+
+  .miniSection img {
+    display: none;
+  }
+
+  .nameContainer{
+    background-color: white;
+    font-size: 10vw;
+    padding-bottom: 15px;
+    position: absolute;
+    text-align: center;
+    top: 160px;
+  }
+
+  .nameHero {
+    background-color: #ffffff;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .projectContainer {
+    padding-bottom: 30px;
+  }
+
+  .projectInfo {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .projectInfo a:hover {
+    background-color: #162447;
+    color: white;
+  }
+
+  .projectInfo ul {
+    list-style-type: none;
+  }
+
+  .projectInfo li {
+    border-radius: 4px;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .projectInfo li:hover{
+    text-decoration: underline;
+  }
+
+  .projectTitle {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .projectTitle a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #e02947 !important;
+    text-decoration: none;
+  }
+
+  .projectTitle a:hover {
+    background-color: #162447;
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  .sectionTitle {
+    font-size: 44px;
+    /* Keeps the title in view under NavBar */
+    padding-top: 65px;
+    margin-top: -65px;
+    text-align: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 600px) and (max-width: 867px){
+  body {
+    padding-left: 7%;
+    padding-right: 7%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .aboutBlurb {
+    font-size: 18px;
+    padding-right: 3%;
+    padding-top: 25px;
+  }
+
+  .contactList ul {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .contactList li {
+    float: left;
+    margin-left: 40px;
+    width: 40px; 
+  }
+
+  .linkList {
+    padding-top: 40px;
+  }
+
+  .linkList h1{
+    color: #162447;
+    font-size: 32px;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  .linkList a {
+    color: #e02947;
+    width: auto;
+  }
+
+  .linkList a:hover{
+    font-style: italic;
+  }
+
+  .linkList ul {
+    font-size: 32px;
+    padding-left: 3%;
+  }
+
+  .linkList li {
+    font-size: 18px;
+    padding: 1px;
+    text-decoration: none;
+  }
+
+  .miniSection {
+    padding: 40px;
+  }
+
+  .miniSection img {
+    display: none;
+  }
+
+  .nameContainer{
+    background-color: white;
+    font-size: 10vw;
+    padding-bottom: 15px;
+    position: absolute;
+    text-align: center;
+    top: 160px;
+  }
+
+  .nameHero {
+    background-color: #ffffff;
+  }
+
+  .navBar {
+    background-color: #ffffff;
+    font-size: 20px;
+    height: 40px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    position: fixed;
+    top: 0;
+    width: 86%;
+    z-index: 2;
+  }
+
+  .navBar li {
+    float: right;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+
+  .navBar li a:hover{
+    background-color: #e02947;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff !important;
+  }
+
+  .navRight:hover {
+    background-color: #e02947;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff !important;
+  }
+
+  .navBar li a {
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .projectContainer {
+    padding-bottom: 50px;
+  }
+
+  .projectInfo {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .projectInfo a:hover {
+    background-color: #162447;
+    color: white;
+  }
+
+  .projectInfo ul {
+    list-style-type: none;
+  }
+
+  .projectInfo li {
+    border-radius: 4px;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .projectInfo li:hover{
+    text-decoration: underline;
+  }
+
+  .projectTitle {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .projectTitle a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .projectTitle a:hover {
+    background-color: #162447;
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  .sectionTitle {
+    font-size: 5vw;
+    /* Keeps the title in view under NavBar */
+    padding-top: 65px;
+    margin-top: -65px;
+  }
+}
+
+@media only screen and (min-width: 868px){
+  body {
+    padding-left: 7%;
+  }
+
+  .aboutBlurb {
+    font-size: 2vw;
+    padding-top: 25px;
+  }
+
+  .canvas {
+    height: 45% !important;
+    width: 45% !important;
+  }
+
+  .contactList ul {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .contactList li {
+    float: left;
+    margin-left: 40px;
+    width: 40px; 
+  }
+
+  .linkList {
+    padding-top: 40px;
+  }
+
+  .linkList h1{
+    color: #162447;
+    font-size: 32px;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  .linkList a {
+    color: #e02947;
+    width: auto;
+  }
+
+  .linkList a:hover{
+    font-style: italic;
+  }
+
+  .linkList ul {
+    font-size: 32px;
+    padding-left: 3%;
+  }
+
+  .linkList li {
+    font-size: 18px;
+    padding: 1px;
+    text-decoration: none;
+  }
+
+  .miniSection {
+    padding-top: 100px;
+  }
+
+  .miniSection img {
+    float: left;
+    width: 45%;
+  }
+
+  .nameContainer{
+    font-size: 8vw;
+    padding-top: 90px;
+    width: 45%;
+  }
+
+  .nameHero {
+    background-color: #ffffff;
+    display: inline-flex;
+    padding-top: 50px;
+  }
+
+  .navBar {
+    background-color: #ffffff;
+    font-size: 20px;
+    height: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    top: 0;
+    width: 85%;
+  }
+
+  .navBar li {
+    float: right;
+    padding-top: 15px;
+  }
+
+  .navBar li a:hover{
+    background-color: #e02947;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff !important;
+  }
+
+  .navRight:hover {
+    background-color: #e02947;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff !important;
+  }
+
+  .navBar li a {
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .projectContainer {
+    padding-bottom: 50px;;
+  }
+
+  .projectInfo {
+    float: left;
+    font-size: 16px;
+    height: 400px;
+    width: 45%;
+  }
+
+  .projectInfo a:hover {
+    background-color: #162447;
+    color: white;
+  }
+
+  .projectInfo p {
+    padding-left: 10px;
+  }
+
+  .projectInfo ul {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+
+  .projectInfo li {
+    border-radius: 4px;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .projectInfo li:hover{
+    text-decoration: underline;
+  }
+
+  .projectTitle {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .projectTitle a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .projectTitle a:hover {
+    background-color: #162447;
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  .sectionTitle {
+    font-size: 5vw;
+    /* Keeps the title in view under NavBar */
+    padding-top: 65px;
+    margin-top: -65px;
   }
 }
