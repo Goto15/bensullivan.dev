@@ -16,7 +16,7 @@ const Resume = props => {
     border: '1px solid black',
     boxShadow: "5px 10px #e02947",
     float: 'left',
-    marginLeft: '25px',
+    marginLeft: '10vw',
     marginRight: '40px',
     maxWidth: '300px'
   }
@@ -25,7 +25,7 @@ const Resume = props => {
     <div id='Resume' className="projectContainer" style={fontColor}>
       <div className="sectionTitle">Resume</div>
       <div style={{paddingTop: '40px'}}>
-      <img src={resumeImg} style={img} alt="Resume preview"/>
+      <img src={resumeImg} style={img} className="resumeImg" alt="Resume preview"/>
         <div className="linkList" style={red}>
         <h1 style={{paddingBottom: '15px'}}>Download</h1>
           <ul>

@@ -8,12 +8,12 @@ const NavBar = (props) => {
   }
 
   return (
-    <ul className="navBar" style={navStyle}>
-      <li><a href="#Contact" className="navRight" style={{color: props.palette[0]}}>Contact</a></li>
-      <li><a href="#Resume" style={{color: props.palette[0]}}>Resume</a></li>
-      <li><a href="#Writing" style={{color: props.palette[0]}}>Writing</a></li>
-      <li><a href="#Projects" style={{color: props.palette[0]}}>Projects</a></li>
-    </ul>
+      <ul className="navBar" style={navStyle}>
+        <li><a href="#Contact" className="navRight" style={{color: props.palette[0]}}>Contact</a></li>
+        <li><a href="#Resume" style={{color: props.palette[0]}}>Resume</a></li>
+        <li><a href="#Writing" style={{color: props.palette[0]}}>Writing</a></li>
+        <li><a href="#Projects" style={{color: props.palette[0]}}>Projects</a></li>
+      </ul>
   )
 }
 
