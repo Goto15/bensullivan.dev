@@ -2,9 +2,9 @@
   "files": {
     "main.css": "/bensullivan.dev/static/css/main.e9d59715.chunk.css",
     "main.js": "/bensullivan.dev/static/js/main.df9a0562.chunk.js",
-    "main.js.map": "/bensullivan.dev/static/js/main.df9a0562.chunk.js.map",
-    "runtime-main.js": "/bensullivan.dev/static/js/runtime-main.a3081bf7.js",
-    "runtime-main.js.map": "/bensullivan.dev/static/js/runtime-main.a3081bf7.js.map",
+    "main.js.map": "/static/js/main.df9a0562.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a3081bf7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a3081bf7.js.map",
     "static/js/2.e8765a1d.chunk.js": "/bensullivan.dev/static/js/2.e8765a1d.chunk.js",
     "static/js/2.e8765a1d.chunk.js.map": "/bensullivan.dev/static/js/2.e8765a1d.chunk.js.map",
     "index.html": "/bensullivan.dev/index.html",
