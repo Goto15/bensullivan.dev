@@ -1,5 +1,7 @@
-import React from 'react'
-import resumeImg from './assets/resume.png'
+import React from 'react';
+import resumeImg from './assets/resume.png';
+import resumePDF from './assets/Benjamin_Sullivan_Resume.pdf';
+import resumeDOCX from './assets/Benjamin_Sullivan_Resume.docx';
 
 const Resume = props => {
 
@@ -29,8 +31,8 @@ const Resume = props => {
         <div className="linkList" style={red}>
         <h1 style={{paddingBottom: '15px'}}>Download</h1>
           <ul>
-            <a href="#"><li>.pdf</li></a>
-            <a href="#"><li>.docx</li></a>
+            <a href={resumePDF} download><li>.pdf</li></a>
+            <a href={resumeDOCX} download><li>.docx</li></a>
           </ul>
         </div>
       </div>

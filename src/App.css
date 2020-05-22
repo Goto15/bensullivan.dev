@@ -21,6 +21,7 @@ html {
   .contactList ul {
     display: inline-block;
     padding-top: 20px;
+    margin-bottom: 50px;
   }
 
   .contactList li {
@@ -163,6 +164,7 @@ html {
   .contactList ul {
     display: inline-block;
     padding-top: 20px;
+    margin-bottom: 50px;
   }
 
   .contactList li {
